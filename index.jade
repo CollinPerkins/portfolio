@@ -1,0 +1,144 @@
+doctype html
+html
+  include ./views/includes/head.jade
+  body
+    include ./views/includes/header.jade
+    
+    #mainContent
+      section.container.aboutMe        
+        .row.aboutMeTop
+          h1 About Me
+          .col-sm-6.margin50          
+            img(src="../assets/imgs/meHead.jpg" alt="Collin Perkins")
+          .col-sm-6          
+            p Hi! My name is Collin Perkins. I am a husband, a father, a nerd, a geek, a athlete and a gamer. Technology is my life, wether it is fixing a computer at my job, comming home and developing an application for my brother, or just goofing off playing Halo 5, it's what I love to do. Im am selft tuaght and working on becomming a full time developer!
+      section.container.randomFacts        
+        h2 Random Facts
+        .row
+          .col-sm-12.randomArea
+            p.random 
+            button.btn-primary.btn.randomBtn Click Me!              
+      section.experience
+        h1 Experience
+        .row#web
+          .col-sm-6 
+            h2 Web Development
+            p I love development, I enjoy it tremendously! I was lucky enough to get a job where in my free time I am able to do what I want as long as it is work releated. Currently I work as a help desk support agent but I also am able to do some web devlopment work when I have the time. I have fixed bugs and built full sites in my spare time but I would love to do this full time, both front-end and back-end!
+          .col-sm-6
+            img(src="../assets/imgs/responsive-web-design-layouts.jpg" alt="Multiple Devices")
+        .row#it
+          .col-sm-6.col-sm-push-6           
+              h2 Help Desk Support
+              p I came into this role not knowing much but I had the drive and the know how to just figure it out on my own. I have learned alot in the last year, but I know that I still have ALOT to learn. I moved into a help desk teir 3 role after only 1 year, based on the fact that I am easy to work with and that I am able to figure out the problems I am having without the need to ask to many questions. I have become the translator at my job, and by that I mean if anyone is having trouble understanding what our web developer is saying, thats when the call me. 
+          .col-sm-6.col-sm-pull-6
+            img(src="../assets/imgs/2-512.png" alt="Collin Perkins")            
+      section.container#skills        
+        h2.margin50 Skills
+        .row
+          .col-sm-6.margin50.novice
+            h4 Novice            
+            .row
+              .col-xs-4
+                .maxColWidth
+                  p NodeJS 
+                    meter(value=40 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p ExpressJS
+                    meter(value=40 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p MongoDB
+                    meter(value=30 min=0 max=100 low=20 high=100 optimum=100)
+            .row
+              .col-xs-4
+                .maxColWidth
+                  p React
+                    meter(value=25 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p Redux
+                    meter(value=20 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p D3
+                    meter(value=20 min=0 max=100 low=20 high=100 optimum=100)
+            .row             
+              .col-xs-4
+                .maxColWidth
+                  p Python
+                    meter(value=25 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p Illustrator
+                    meter(value=40 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4 
+          .col-sm-6.proficient
+            h4 Proficient
+            .row
+              .col-xs-4
+                .maxColWidth
+                  p HML5
+                    meter(value=75 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p CSS3
+                    meter(value=75 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p JavaScript
+                    meter(value=65 min=0 max=100 low=20 high=100 optimum=100)
+            .row
+              .col-xs-4
+                .maxColWidth
+                  p Bootstrap
+                    meter(value=85 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p git
+                    meter(value=70 min=0 max=100 low=20 high=100 optimum=100)
+              .col-xs-4
+                .maxColWidth
+                  p JQuery
+                    meter(value=70 min=0 max=100 low=20 high=100 optimum=100)
+            .row
+              .col-xs-4
+              .col-xs-4
+                .maxColWidth
+                  p Photoshop
+                    meter(value=65 min=0 max=100 low=20 high=100 optimum=100)                            
+              .col-xs-4
+      section.container.portfolio
+        h1 Portfolio
+        .row
+          .col-sm-4
+            img(src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="Place Holder")
+          .col-sm-4
+            img(src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="Place Holder")
+          .col-sm-4
+            img(src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="Place Holder")
+      section.blog
+        .container
+          .col-md-12.text-center
+            h2
+              | Blog Comming Soon!       
+            a(href='#') 
+              button.btn-primary.btn.randomBtn Blog
+            .logo-placeholder.floating-logo
+              img(src='../assets/imgs/rocket.png', alt='Sketch Logo')     
+      section.contact
+        .container
+          .head
+            h1 Contact Me
+          form(method="POST" action="http://formspree.io/collinperkins@gmail.com")
+            input(type='text', name='name', placeholder='Name')
+            br
+            input(type='email', name='email', placeholder='Email')
+            br
+            textarea(type='text', name='message', placeholder='Message')
+            br
+            //- .message Message Sent
+            button#submit(type='submit') Send!
+
+    
+    include ./views/includes/footer.jade
